@@ -8,7 +8,6 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -53,9 +52,6 @@ public class ClientService {
         return findById(id);
     }
 
-    private ClientDTO convertToDTO(Client client){
-        return mapper.map(client, ClientDTO.class);
-    }
 
     public Set<String> getClientContactsByTypeById(long id, String type) {
         Client client = findById(id);
@@ -66,6 +62,10 @@ public class ClientService {
             result = client.getPhones();
         }
         return result;
+    }
+
+    private ClientDTO convertToDTO(Client client){
+        return mapper.map(client, ClientDTO.class);
     }
 
     private Client findById(long id) {
