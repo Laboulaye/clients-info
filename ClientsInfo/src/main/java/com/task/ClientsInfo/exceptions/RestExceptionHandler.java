@@ -19,7 +19,7 @@ public class RestExceptionHandler
             = {ClientNotFoundException.class })
     protected ResponseEntity<Object> handleNoResult(
             RuntimeException ex, WebRequest request) {
-        String bodyOfResponse = "Client not found. Check your input data carefully";
+        String bodyOfResponse = "Client not found. Check input id client carefully";
         return handleExceptionInternal(ex, bodyOfResponse,
                 new HttpHeaders(), HttpStatus.NOT_FOUND, request);
     }
