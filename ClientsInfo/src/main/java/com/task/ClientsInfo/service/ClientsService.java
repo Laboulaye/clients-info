@@ -14,14 +14,14 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
-public class ClientService {
+public class ClientsService {
     @Autowired
     private ClientsRepository repository;
     @Autowired
     private ModelMapper mapper;
 
     public List<ClientDTO> getAllClients() {
-        return repository.findAll().stream().map(this::convertToDTO).collect(Collectors.toList());
+        return repository.findAll().stream().map(this::convertToDTO).toList();
     }
 
     public ClientDTO getClientById(long id) {

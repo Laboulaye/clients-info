@@ -26,4 +26,9 @@ public class Client {
     @CollectionTable(name = "client_phones")
     @Column(name = "phone_number")
     private Set<String> phones;
+
+    public Client(long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }

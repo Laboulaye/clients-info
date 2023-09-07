@@ -2,7 +2,7 @@ package com.task.ClientsInfo.controller;
 
 import com.task.ClientsInfo.dto.ClientDTO;
 import com.task.ClientsInfo.entity.Client;
-import com.task.ClientsInfo.service.ClientService;
+import com.task.ClientsInfo.service.ClientsService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.ArraySchema;
@@ -20,7 +20,7 @@ import java.util.Set;
 public class ClientsController {
 
     @Autowired
-    private ClientService service;
+    private ClientsService service;
 
     @Operation(summary = "Create new client")
     @ApiResponses({
