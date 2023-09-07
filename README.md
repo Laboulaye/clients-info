@@ -32,22 +32,24 @@ API обеспечивает следующие функции:
 <br/>
 <br/>
 
-![image1](src/main/resources/static/7.jpg)
+![image1](ClientsInfo/src/main/resources/static/7.jpg)
+
 <br/>
 
-![image2](src/main/resources/static/1.jpg)
+![image2](ClientsInfo/src/main/resources/static/1.jpg)
+
 <br/>
 
-![image3](src/main/resources/static/2.jpg)
+![image3](ClientsInfo/src/main/resources/static/2.jpg)
 <br/>
 
-![image4](src/main/resources/static/3.jpg)
+![image4](ClientsInfo/src/main/resources/static/3.jpg)
 <br/>
 
-![image5](src/main/resources/static/4.jpg)
+![image5](ClientsInfo/src/main/resources/static/4.jpg)
 <br/>
 
-![image6](src/main/resources/static/5.jpg)
+![image6](ClientsInfo/src/main/resources/static/5.jpg)
 <br/>
 
-![image7](src/main/resources/static/6.jpg)
+![image7](ClientsInfo/src/main/resources/static/6.jpg)
