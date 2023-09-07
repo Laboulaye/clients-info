@@ -1,25 +1,30 @@
 package com.task.ClientsInfo.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Table(name = "clients")
 public class Client {
 
     @Id
     @GeneratedValue
     private long id;
     private String name;
-    private List<String> emails;
-    private List<String> phones;
-
+    @ElementCollection
+    @CollectionTable(name="client_emails")
+    @Column(name = "email")
+    private Set<String> emails;
+    @ElementCollection
+    @CollectionTable(name = "client_phones")
+    @Column(name = "phone_number")
+    private Set<String> phones;
 }
