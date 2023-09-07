@@ -54,3 +54,6 @@ API обеспечивает следующие функции:
 <br/>
 
 ![image7](ClientsInfo/src/main/resources/static/6.jpg)
+<br/>
+
+![image8](ClientsInfo/src/main/resources/static/8.jpg)
